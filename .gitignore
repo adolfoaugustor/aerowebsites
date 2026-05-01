@@ -1,6 +1,3 @@
-# Claude local configuration
-.claude/
-
 # MCP configuration with tokens
 .mcp.json
 
@@ -14,3 +11,6 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Claude local settings (contains API keys)
+.claude/settings.local.json
