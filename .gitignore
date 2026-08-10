@@ -1,3 +1,12 @@
+# Dependências Node (apenas para dev local)
+node_modules/
+
+# Arquivos do servidor de desenvolvimento (não necessário em produção)
+server.js
+package.json
+package-lock.json
+public/
+
 # MCP configuration with tokens
 .mcp.json
 
@@ -12,5 +21,5 @@
 .DS_Store
 Thumbs.db
 
-# Claude local settings (contains API keys)
+# Claude local settings
 .claude/settings.local.json
