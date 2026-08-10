@@ -1,0 +1,15 @@
+{
+  "name": "site-aerowebsites",
+  "version": "1.0.0",
+  "description": "Website oficial e vitrine de sistemas da Aero Websites",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "Aero Websites",
+  "license": "ISC"
+}

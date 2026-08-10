@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aero Websites | Sistemas Web Inteligentes e Prontos para Uso</title>
+  <meta name="description" content="Aero Websites desenvolve sistemas web e aplicativos leves, rápidos e 100% online. Descubra nosso SGA, Agendamento e Cardápio Digital integrado ao WhatsApp.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/aws.png">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Ícones Phosphor -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Glow de Fundo (Nebulosas de Luz) -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+  <div class="glow-bg glow-3"></div>
+
+  <!-- Header -->
+  <header id="main-header" class="header-glass">
+    <div class="container header-container">
+      <a href="#" class="logo-area" id="logo-link">
+        <img src="img/aws.png" alt="Aero Websites Logo" class="logo-icon" id="logo-img">
+        <span class="logo-text">Aero Websites</span>
+      </a>
+      <nav class="nav-menu" id="navigation-menu">
+        <a href="#solucoes" class="nav-link">Nossos Sistemas</a>
+        <a href="#beneficios" class="nav-link">Vantagens</a>
+        <a href="#simulador" class="nav-link">Gerenciador de Promoções</a>
+        <a href="#contato" class="nav-link btn-header-contact" id="btn-header-cta">
+          Orçamento
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir Menu">
+        <i class="ph ph-list" id="menu-icon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge-status"><i class="ph ph-sparkle"></i> 100% Online & Sem Complicações</span>
+        <h1 class="hero-title">Sistemas Web Rápidos, Leves e <span class="gradient-text">Prontos para Voar</span>.</h1>
+        <p class="hero-subtitle">
+          Potencialize seu negócio com soluções sob medida que rodam diretamente no navegador. Sem necessidade de instalações locais, com interfaces intuitivas e prontas para uso.
+        </p>
+        <div class="hero-actions">
+          <a href="#solucoes" class="btn btn-primary" id="btn-hero-explore">
+            Ver Sistemas Disponíveis
+            <i class="ph ph-arrow-right"></i>
+          </a>
+          <a href="#contato" class="btn btn-secondary" id="btn-hero-chat">
+            Falar com Especialista
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="floating-card c1">
+            <i class="ph ph-calendar-check text-cyan"></i>
+            <div>
+              <h4>Agendamento Ativo</h4>
+              <p>Agenda Arretada</p>
+            </div>
+          </div>
+          <div class="floating-card c2">
+            <i class="ph ph-users-four text-purple"></i>
+            <div>
+              <h4>Fila do SGA</h4>
+              <p>Painel de Controle</p>
+            </div>
+          </div>
+          <div class="floating-card c3">
+            <i class="ph ph-chats text-green"></i>
+            <div>
+              <h4>Pedidos WhatsApp</h4>
+              <p>Cardápio Online</p>
+            </div>
+          </div>
+          <div class="hero-main-glass">
+            <div class="glass-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="glass-body">
+              <div class="code-line"><span class="c-blue">const</span> app = <span class="c-green">aeroWebsites</span>();</div>
+              <div class="code-line"><span class="c-blue">app</span>.<span class="c-yellow">deploy</span>({ <span class="c-orange">hosting</span>: <span class="c-green">'100% cloud'</span> });</div>
+              <div class="code-line text-muted">// Rodando de forma rápida na sua hospedagem...</div>
+              <div class="pulse-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluções (Showcase Interativo com Abas) -->
+  <section class="solutions-section" id="solucoes">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Sistemas Prontos e Sob Medida</h2>
+        <p class="section-subtitle">Temos soluções pensadas para cada tipo de fluxo de trabalho. Selecione uma solução abaixo para ver os detalhes:</p>
+      </div>
+
+      <!-- Abas de Navegação -->
+      <div class="tabs-container" id="systems-tabs">
+        <button class="tab-btn active" id="tab-agenda" data-target="content-agenda">
+          <i class="ph ph-calendar-blank"></i>
+          Agendamento de Serviços
+        </button>
+        <button class="tab-btn" id="tab-sga" data-target="content-sga">
+          <i class="ph ph-users-three"></i>
+          Gerenciamento SGA
+        </button>
+        <button class="tab-btn" id="tab-cardapio" data-target="content-cardapio">
+          <i class="ph ph-hamburger"></i>
+          Cardápio Digital (WhatsApp)
+        </button>
+      </div>
+
+      <!-- Conteúdo das Abas -->
+      <div class="tab-contents-wrapper">
+        
+        <!-- Tab 1: Agendamento de Serviços -->
+        <div class="tab-content active" id="content-agenda">
+          <div class="solution-grid">
+            <div class="solution-info">
+              <span class="badge-mini text-cyan"><i class="ph ph-clock"></i> AGENDA ARRETADA</span>
+              <h3>Agendamento Inteligente para Seus Clientes</h3>
+              <p>
+                O **Agenda Arretada** é a nossa solução completa para marcação de consultas, horários e serviços online. Totalmente dinâmico, ele permite que o cliente escolha o profissional, o horário e o serviço desejado direto pelo celular.
+              </p>
+              <ul class="solution-features">
+                <li><i class="ph ph-check-circle"></i> Integração com calendários modernos</li>
+                <li><i class="ph ph-check-circle"></i> Painel administrativo para controle de profissionais</li>
+                <li><i class="ph ph-check-circle"></i> Confirmações rápidas e interface intuitiva</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary btn-cta-system" data-system="Agendamento de Serviços">Solicitar Demonstração</a>
+            </div>
+            <div class="solution-mockup">
+              <div class="browser-mockup">
+                <div class="browser-bar">
+                  <div class="mockup-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  <div class="mockup-url">agendaarretada.aerowebsites.com.br</div>
+                </div>
+                <div class="browser-screen">
+                  <img src="img/AgendaArretada.png" alt="Painel do sistema Agenda Arretada" class="mockup-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: SGA Gerenciamento de Atendimento -->
+        <div class="tab-content" id="content-sga">
+          <div class="solution-grid">
+            <div class="solution-info">
+              <span class="badge-mini text-purple"><i class="ph ph-identification-card"></i> SISTEMA SGA</span>
+              <h3>Organização Completa da Fila de Atendimento</h3>
+              <p>
+                Gerencie o fluxo de atendimento da sua recepção ou empresa de forma digital. O **SGA (Gerenciamento de Atendimento)** dispensa painéis físicos caros: basta uma TV conectada à internet ou tablet para exibir senhas, chamar clientes por som/voz e classificar prioridades.
+              </p>
+              <ul class="solution-features">
+                <li><i class="ph ph-check-circle"></i> Emissão de senhas comuns, preferenciais e rápidas</li>
+                <li><i class="ph ph-check-circle"></i> Painel de TV (chamada por som e voz integrada)</li>
+                <li><i class="ph ph-check-circle"></i> Histórico detalhado de tempos de espera</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary btn-cta-system" data-system="SGA Gerenciamento de Atendimento">Solicitar Demonstração</a>
+            </div>
+            <div class="solution-mockup">
+              <div class="browser-mockup">
+                <div class="browser-bar">
+                  <div class="mockup-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                  <div class="mockup-url">sga.aerowebsites.com.br</div>
+                </div>
+                <div class="browser-screen">
+                  <img src="img/sga-atendimento.png" alt="Painel Geral do SGA" class="mockup-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Cardápio Digital -->
+        <div class="tab-content" id="content-cardapio">
+          <div class="solution-grid">
+            <div class="solution-info">
+              <span class="badge-mini text-green"><i class="ph ph-whatsapp-logo"></i> CARDÁPIO DIGITAL</span>
+              <h3>Vendas Sem Taxas no WhatsApp do Seu Cliente</h3>
+              <p>
+                Permita que seus clientes naveguem pelo seu menu de forma limpa, selecionem produtos, adicionem complementos e cliquem em enviar. O pedido chega formatado de maneira perfeita no WhatsApp do seu estabelecimento.
+              </p>
+              <ul class="solution-features">
+                <li><i class="ph ph-check-circle"></i> Sem taxas por pedido e totalmente web (sem downloads)</li>
+                <li><i class="ph ph-check-circle"></i> Atualização simples de fotos, preços e categorias</li>
+                <li><i class="ph ph-check-circle"></i> Cálculo de frete dinâmico opcional</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary btn-cta-system" data-system="Cardápio Digital WhatsApp">Solicitar Demonstração</a>
+            </div>
+            <div class="solution-mockup">
+              <div class="phone-mockup">
+                <div class="phone-speaker"></div>
+                <div class="phone-screen">
+                  <img src="img/cardapio-digital.png" alt="Interface Mobile do Cardápio Digital" class="mockup-image">
+                </div>
+                <div class="phone-home-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios da Hospedagem & Acesso -->
+  <section class="benefits-section" id="beneficios">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Tecnologia Feita Para Simplificar</h2>
+        <p class="section-subtitle">Esqueça a necessidade de adquirir computadores caros ou de fazer manutenções complexas locais.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon bg-cyan-gradient">
+            <i class="ph ph-cloud-arrow-up"></i>
+          </div>
+          <h3>100% Online e Seguro</h3>
+          <p>Seus dados salvos diretamente na nuvem de forma segura. Acesse as informações da sua empresa de qualquer lugar do mundo.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon bg-purple-gradient">
+            <i class="ph ph-device-mobile-camera"></i>
+          </div>
+          <h3>Sem Dispositivos Locais</h3>
+          <p>Tudo o que você precisa é de um navegador de internet e acesso à rede. Funciona perfeitamente em tablets, celulares e PCs.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon bg-green-gradient">
+            <i class="ph ph-sparkles"></i>
+          </div>
+          <h3>Uso Extremamente Fácil</h3>
+          <p>Interfaces pensadas para serem amigáveis para todos os públicos. Facilidade para seus clientes e agilidade para seu time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gerenciador de Promoções (Em Desenvolvimento & Simulador) -->
+  <section class="promo-manager-section" id="simulador">
+    <div class="container">
+      <div class="promo-grid">
+        <div class="promo-text-content">
+          <span class="badge-mini text-orange"><i class="ph ph-clock-countdown"></i> EM DESENVOLVIMENTO</span>
+          <h2>Gerenciador de Promoções</h2>
+          <p>
+            O **Gerenciador de Promoções** (Robô de Ofertas e Anúncios) é a nossa automação inteligente focada no WhatsApp e Telegram. Ele captura automaticamente ofertas nos maiores marketplaces (como Amazon, Shopee e Mercado Livre), converte para links de afiliado e realiza o disparo programado para seus grupos e canais oficiais.
+          </p>
+          <p>
+            <strong>Propagandas e Anúncios Patrocinados:</strong> Além de ofertas de afiliados, o sistema gerencia a contratação e o agendamento de postagens pagas. Empresas e profissionais locais podem alugar horários (slots de disparos) para anunciar seus serviços e produtos diretamente para a sua audiência de forma 100% automatizada e integrada ao Pix.
+          </p>
+          <div class="promo-features-list">
+            <div class="promo-feature-item">
+              <i class="ph ph-eye"></i>
+              <div>
+                <h5>Monitoramento Contínuo</h5>
+                <p>Busca automática de ofertas reais na internet.</p>
+              </div>
+            </div>
+            <div class="promo-feature-item">
+              <i class="ph ph-share-network"></i>
+              <div>
+                <h5>Envio Multicanal</h5>
+                <p>Compartilhamento com templates estruturados e links afiliados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulador Interativo do Gerenciador -->
+        <div class="promo-simulator-card glass-panel" id="simulator-widget">
+          <div class="simulator-header">
+            <h4><i class="ph ph-terminal-window"></i> Teste o Compartilhamento</h4>
+            <p>Simule como as promoções serão formatadas e compartilhadas</p>
+          </div>
+          
+          <div class="simulator-form">
+            <div class="form-group">
+              <label for="sim-product">Nome do Produto</label>
+              <input type="text" id="sim-product" value="Fone Bluetooth Pro 5" placeholder="Ex: Smart TV 55 polegadas">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sim-price-from">De (R$)</label>
+                <input type="text" id="sim-price-from" value="299,90" placeholder="0,00">
+              </div>
+              <div class="form-group">
+                <label for="sim-price-to">Por (R$)</label>
+                <input type="text" id="sim-price-to" value="149,90" placeholder="0,00">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sim-badge">Etiqueta Especial</label>
+              <select id="sim-badge">
+                <option value="🔥 SUPER OFERTA">🔥 Super Oferta</option>
+                <option value="🎟️ CUPOM ESPECIAL">🎟️ Cupom Especial</option>
+                <option value="📉 MENOR PREÇO">📉 Menor Preço do Ano</option>
+                <option value="💎 ANÚNCIO PAGO">💎 Anúncio Pago (Divulgação Local)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Preview da Mensagem Simulada (WhatsApp Layout) -->
+          <div class="simulator-preview">
+            <div class="preview-label">Visualização no WhatsApp</div>
+            <div class="whatsapp-chat-container">
+              <div class="whatsapp-message sent" id="preview-bubble">
+                <!-- Imagem do Produto no Balão -->
+                <div class="wa-image-placeholder">
+                  <i class="ph ph-shopping-bag wa-bag-icon"></i>
+                  <div class="wa-image-overlay">
+                    <span class="wa-badge" id="preview-badge-text">🔥 SUPER OFERTA</span>
+                  </div>
+                </div>
+                <!-- Conteúdo da Mensagem -->
+                <div class="wa-message-text">
+                  <span class="wa-title" id="preview-title-text">*Fone Bluetooth Pro 5*</span>
+                  <div class="wa-prices">
+                    <span class="wa-price-from" id="preview-from-text">❌ De: ~R$ 299,90~</span>
+                    <span class="wa-price-to" id="preview-to-text">✅ *Por apenas: R$ 149,90!*</span>
+                    <span class="wa-discount" id="preview-discount-text">(-50%)</span>
+                  </div>
+                  <div class="wa-link-text">
+                    👉 *Compre aqui:* <span class="wa-link-url" id="preview-link-text">https://shope.ee/f4K39Aer</span>
+                  </div>
+                  <div class="wa-footer-info" id="preview-patrocinio-note">
+                    Anúncio validado por Aero Websites.
+                  </div>
+                </div>
+                <!-- Hora e Confirmação -->
+                <div class="wa-meta">
+                  <span class="wa-time">17:54</span>
+                  <i class="ph ph-checks wa-double-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#" target="_blank" class="btn btn-primary w-full" id="btn-simulate-post">
+            <i class="ph ph-whatsapp-logo"></i>
+            Acessar Canal de Promoções
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section class="contact-section" id="contato">
+    <div class="container contact-container">
+      <div class="contact-header">
+        <h2 class="section-title">Inicie o Seu Voo Digital</h2>
+        <p class="section-subtitle">
+          Tem interesse em algum dos nossos sistemas ou precisa de um projeto exclusivo? Preencha os detalhes e entraremos em contato via WhatsApp rapidamente.
+        </p>
+        <div class="contact-info-list">
+          <div class="info-item">
+            <i class="ph ph-envelope"></i>
+            <div>
+              <span>Email para contato</span>
+              <strong>contato@aerowebsites.com.br</strong>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="ph ph-globe"></i>
+            <div>
+              <span>Site Principal</span>
+              <strong>https://aerowebsites.com.br/</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de Contato -->
+      <div class="contact-form-wrapper glass-panel">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="client-name">Seu Nome</label>
+            <input type="text" id="client-name" required placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="client-email">Seu E-mail</label>
+            <input type="email" id="client-email" required placeholder="Exemplo: seuemail@email.com">
+          </div>
+          <div class="form-group">
+            <label for="client-phone">WhatsApp / Telefone</label>
+            <input type="tel" id="client-phone" required placeholder="Exemplo: (85) 99999-9999">
+          </div>
+          <div class="form-group">
+            <label for="client-system">Sistema de Interesse</label>
+            <select id="client-system">
+              <option value="site-institucional">Website / Customizado</option>
+              <option value="agendamento">Agendamento de Serviços (Agenda Arretada)</option>
+              <option value="sga">Gerenciamento SGA (Filas e Painéis)</option>
+              <option value="cardapio">Cardápio Digital para Delivery</option>
+              <option value="promocoes">Gerenciador de Promoções</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="client-message">Mensagem ou Detalhes da Solicitação</label>
+            <textarea id="client-message" rows="4" placeholder="Fale um pouco sobre o seu negócio e suas necessidades..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full" id="btn-submit-form">
+            Enviar Pedido via WhatsApp
+            <i class="ph ph-whatsapp-logo"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo-area">
+          <img src="img/aws.png" alt="Aero Websites Logo" class="logo-icon">
+          <span class="logo-text">Aero Websites</span>
+        </div>
+        <p class="footer-desc">Soluções digitais inteligentes, rápidas e online para impulsionar seu negócio no ambiente digital.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Nossos Sistemas</h4>
+        <ul>
+          <li><a href="#solucoes" onclick="selectTab('tab-agenda')">Agendamento de Serviços</a></li>
+          <li><a href="#solucoes" onclick="selectTab('tab-sga')">SGA Atendimento</a></li>
+          <li><a href="#solucoes" onclick="selectTab('tab-cardapio')">Cardápio Digital</a></li>
+          <li><a href="#simulador">Gerenciador de Promoções</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#solucoes">Portfólio</a></li>
+          <li><a href="#beneficios">Vantagens</a></li>
+          <li><a href="#contato">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Aero Websites. Todos os direitos reservados. Hospedado em <a href="https://aerowebsites.com.br/" target="_blank">aerowebsites.com.br</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
